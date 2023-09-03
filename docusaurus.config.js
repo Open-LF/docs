@@ -76,7 +76,7 @@ const config = {
         title: 'Open Language Foundation',
         logo: {
           alt: 'Open Language Foundation Logo',
-          src: 'img/logo.svg',
+          src: 'img/globe.png',
         },
         items: [
           {to: '/manifesto', label: 'Manifesto', position: 'left'},
