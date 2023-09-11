@@ -2,7 +2,7 @@
 title: Manifesto
 ---
 
-# Open Language Foundation Manifesto
+# Manifesto
 
 We, the members of the Open Language Foundation, are united in our pursuit to advance technology for the localization industry. We are committed to the enablement of seamless communication across diverse cultures and languages.
 

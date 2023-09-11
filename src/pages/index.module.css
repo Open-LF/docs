@@ -9,6 +9,13 @@
   position: relative;
   overflow: hidden;
   min-height: 90vh;
+
+  /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=12c1ac&c2=193e72&gt=r&gd=dbr
+*/
+background: var(--ifm-color-secondary);
+background: radial-gradient(at right bottom, var(--ifm-color-secondary), var(--ifm-color-primary));
 }
 
 @media screen and (max-width: 996px) {

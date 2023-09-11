@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Open Language Foundation',
-  tagline: 'Advancing Localization Technology',
+  tagline: 'Empowering Global Communication Through Technology',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
