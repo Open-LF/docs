@@ -6,20 +6,42 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #173C70;
-  --ifm-color-secondary: #12C1AC;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --purple: #29235C;
+  --pink:   #D42A80;
+  --mauve:  #82368C;
+  --grey:   #C6C6C6;
+  
+  --ifm-color-primary:   var(--pink);
+  --ifm-color-secondary: var(--mauve);
+  
+  --ifm-footer-background-color: var(--purple);
+  --ifm-container-width: 800px;
+
+  --ifm-footer-background-color: #303846;
+  
+  --ifm-footer-link-color: var(--pink);
+  --ifm-footer-color: var(--ifm-footer-link-color);
+  --ifm-footer-title-color: var(--ifm-color-white);
+
+  --ifm-color-primary-dark:       darken(var(--ifm-color-primary), 15%);
+  --ifm-color-primary-darker:     darken(var(--ifm-color-primary), 30%);
+  --ifm-color-primary-darkest:    darken(var(--ifm-color-primary), 45%);
+  --ifm-color-primary-light:      lighten(var(--ifm-color-primary), 15%);
+  --ifm-color-primary-lighter:    lighten(var(--ifm-color-primary), 30%);
+  --ifm-color-primary-lightest:   lighten(var(--ifm-color-primary), 45%);  
+  --ifm-color-secondary-dark:     darken(var(--ifm-color-secondary), 15%);
+  --ifm-color-secondary-darker:   darken(var(--ifm-color-secondary), 30%);
+  --ifm-color-secondary-darkest:  darken(var(--ifm-color-secondary), 45%);
+  --ifm-color-secondary-light:    lighten(var(--ifm-color-secondary), 15%);
+  --ifm-color-secondary-lighter:  lighten(var(--ifm-color-secondary), 30%);
+  --ifm-color-secondary-lightest: lighten(var(--ifm-color-secondary), 40%);
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --ifm-color-primary: #193D72;
   --ifm-color-secondary: #12C1AC;
   --ifm-color-primary-dark: #21af90;
@@ -29,21 +51,72 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+h1 {
+  color: var(--purple);
 }
 
-
-h2, strong {
+h3, strong {
   color: var(--ifm-color-primary);
 }
 
-h3, h4 {
+h2, h4 {
   color: var(--ifm-color-secondary);
 }
 
-.bg--primary {
-  background: var(--ifm-color-primary);
+.bg--primary,
+.hero--primary {
+  background: var(--purple);
+  background: radial-gradient(at right bottom, var(--purple), var(--pink));
+  color: white;
 }
 
-.bg--secondary {
-  background: var(--ifm-color-secondary-light);
+.bg--secondary,
+.hero--secondary {
+  background: var(--ifm-color-secondary);
+  background: radial-gradient(at right bottom, var(--purple), var(--ifm-color-secondary));
+  color: white;
+}
+
+.bg--primary h1,
+.bg--primary h2,
+.bg--secondary h1,
+.bg--secondary h2 {
+  color: white;
+  text-shadow: 0 -2px rgba(0, 0, 0, .7);
+}
+
+.hero--primary .hero__title {
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__title span {
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+.olf-logo {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.partner-logo {
+  width: 100%;
+    height: 100%;
+    max-height: 4rem;
+    max-width: 12rem;
+    object-fit: contain;
+    filter: saturate(0)
+}
+
+[data-theme='dark'] .partner-logo {
+  filter: invert(1);
 }

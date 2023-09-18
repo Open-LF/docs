@@ -10,12 +10,7 @@
   overflow: hidden;
   min-height: 90vh;
 
-  /*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=12c1ac&c2=193e72&gt=r&gd=dbr
-*/
-background: var(--ifm-color-secondary);
-background: radial-gradient(at right bottom, var(--ifm-color-secondary), var(--ifm-color-primary));
+  
 }
 
 @media screen and (max-width: 996px) {
@@ -24,8 +19,19 @@ background: radial-gradient(at right bottom, var(--ifm-color-secondary), var(--i
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
+.logoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1rem;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    max-height: 4rem;
+    max-width: 12rem;
+    object-fit: contain;
+    filter: saturate(0)
 }

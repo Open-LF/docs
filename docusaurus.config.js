@@ -80,6 +80,7 @@ const config = {
         },
         items: [
           {to: '/manifesto', label: 'Manifesto', position: 'left'},
+          {to: 'https://forms.gle/PGwuWFgxv6KgszC46', label: 'Register Interest', position: 'left'},
           {
             href: 'https://github.com/Open-LF/docs',
             label: 'GitHub',
@@ -97,6 +98,7 @@ const config = {
                 label: 'Manifesto',
                 to: '/manifesto',
               },
+              {to: 'https://forms.gle/PGwuWFgxv6KgszC46', label: 'Register Interest'},
             ],
           },
           {
