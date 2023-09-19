@@ -41,7 +41,9 @@ function SocialProof() {
     {name: "Locale", path: "locale.png"},
     {name: "Alpha CRC", path: "alpha.svg"},
     {name: "Acolad", path: "acolad.png"},
-    {name: "Argos Multilingual", path: "argos.png"},]
+    {name: "Argos Multilingual", path: "argos.png"},
+    {name: "Atlassian", path: "atlassian.svg"},
+  ]
   return(
     <section className="padding-vert--xl">
       <div className="container text--center">
@@ -49,7 +51,7 @@ function SocialProof() {
         <p className="margin-bottom--lg">We are honored to have the following visionary companies committed to signing our manifesto and supporting our mission</p>
         <div className={clsx(styles.logoGrid)}>
           {logos.map(logo =>
-            <img src={`/img/logos/${logo.path}`} alt={logo.name} className="partner-logo margin-bottom--lg" />
+            <img src={`/img/logos/${logo.path}`} alt={logo.name} className="partner-logo" />
           )}
         </div>
       </div>
@@ -66,15 +68,15 @@ function Event() {
         <p>We're excited to announce our Manifesto Signing Event, taking place on October 10th 2023, in beautiful San Jose, California. This event will bring together key figures from prominent companies who share our vision and are committed to driving change in the localization industry.</p>
         <hr className="margin-vert--lg" />
         <div className="row text--left">
-          <div class="col">
+          <div class="col margin-bottom--lg">
             <h3>Network with Industry Leaders</h3>
             Connect with visionaries who are shaping the future of localization and internationalization.
           </div>
-          <div class="col">
+          <div class="col margin-bottom--lg">
             <h3>Learn About Our Initiatives</h3>
             Discover how you can actively contribute to our mission and be a part of something big.
           </div>
-          <div class="col">
+          <div class="col margin-bottom--lg">
             <h3>Sign the Manifesto</h3>
             Join us in making a public commitment to our principles and drive positive change.
           </div>
@@ -164,7 +166,6 @@ export default function Home() {
       <Hero />
       <SocialProof />
       <Event />
-      
       <Features />
       <CallToAction />
     </Layout>
