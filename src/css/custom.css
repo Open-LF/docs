@@ -7,37 +7,30 @@
 /* You can override the default Infima variables here. */
 :root {
   --purple: #29235C;
+  --purple--dark: #1d1840;
   --pink:   #D42A80;
   --mauve:  #82368C;
   --grey:   #C6C6C6;
   
   --ifm-color-primary:   var(--pink);
   --ifm-color-secondary: var(--mauve);
+
+  --ifm-color-primary-dark: #bf2673;
+  --ifm-color-primary-darker: #b4246d;
+  --ifm-color-primary-darkest: #941d5a;
+  --ifm-color-primary-light: #d83c8b;
+  --ifm-color-primary-lighter: #db4993;
+  --ifm-color-primary-lightest: #e169a6;
+
+  --ifm-color-secondary-dark: #75317e;
+  --ifm-color-secondary-darker: #6f2e77;
+  --ifm-color-secondary-darkest: #5b2662;
+  --ifm-color-secondary-light: #8e3b99;
+  --ifm-color-secondary-lighter: #963ea1;
+  --ifm-color-secondary-lightest: #a946b6;
   
-  --ifm-footer-background-color: var(--purple);
+  /* layout */
   --ifm-container-width: 800px;
-
-  --ifm-footer-background-color: #303846;
-  
-  --ifm-footer-link-color: var(--pink);
-  --ifm-footer-color: var(--ifm-footer-link-color);
-  --ifm-footer-title-color: var(--ifm-color-white);
-
-  --ifm-color-primary-dark:       darken(var(--ifm-color-primary), 15%);
-  --ifm-color-primary-darker:     darken(var(--ifm-color-primary), 30%);
-  --ifm-color-primary-darkest:    darken(var(--ifm-color-primary), 45%);
-  --ifm-color-primary-light:      lighten(var(--ifm-color-primary), 15%);
-  --ifm-color-primary-lighter:    lighten(var(--ifm-color-primary), 30%);
-  --ifm-color-primary-lightest:   lighten(var(--ifm-color-primary), 45%);  
-  --ifm-color-secondary-dark:     darken(var(--ifm-color-secondary), 15%);
-  --ifm-color-secondary-darker:   darken(var(--ifm-color-secondary), 30%);
-  --ifm-color-secondary-darkest:  darken(var(--ifm-color-secondary), 45%);
-  --ifm-color-secondary-light:    lighten(var(--ifm-color-secondary), 15%);
-  --ifm-color-secondary-lighter:  lighten(var(--ifm-color-secondary), 30%);
-  --ifm-color-secondary-lightest: lighten(var(--ifm-color-secondary), 40%);
-
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -52,6 +45,18 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 } */
+
+.footer {
+  color: var(--ifm-color-white);
+}
+
+.footer--dark {
+  background: var(--purple--dark);
+}
+
+.footer__link-item {
+  color: var(--ifm-color-primary)
+}
 
 h1 {
   color: var(--purple);
@@ -68,33 +73,37 @@ h2, h4 {
 .bg--primary,
 .hero--primary {
   background: var(--purple);
-  background: radial-gradient(at right bottom, var(--purple), var(--pink));
-  color: white;
+  background: radial-gradient(at right bottom, var(--purple), var(--ifm-color-primary));
+  color: var(--ifm-color-white);
 }
 
 .bg--secondary,
 .hero--secondary {
   background: var(--ifm-color-secondary);
   background: radial-gradient(at right bottom, var(--purple), var(--ifm-color-secondary));
-  color: white;
+  color: var(--ifm-color-white);
 }
 
 .bg--primary h1,
 .bg--primary h2,
 .bg--secondary h1,
 .bg--secondary h2 {
-  color: white;
+  color: var(--ifm-color-white);
   text-shadow: 0 -2px rgba(0, 0, 0, .7);
 }
 
 .hero--primary .hero__title {
-  color: white;
+  color: var(--ifm-color-white);
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button.button--secondary {
+  color: var(--ifm-color-white);
 }
 
 .hero__title span {
