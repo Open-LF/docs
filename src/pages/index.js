@@ -43,6 +43,8 @@ function SocialProof() {
     {name: "Acolad", path: "acolad.png"},
     {name: "Argos Multilingual", path: "argos.png"},
     {name: "Atlassian", path: "atlassian.svg"},
+    {name: "GALA", path: "gala.png"},
+    {name: "Vistatec", path: "vistatec.png"},
   ]
   return(
     <section className="padding-vert--xl">
