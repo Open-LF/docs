@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import partners from '../data/partners.js'
 
 import styles from './index.module.css';
 
@@ -36,24 +37,14 @@ function Hero() {
 }
 
 function SocialProof() {
-  const logos = [
-    {name: "CISCO", path: "cisco.svg"},
-    {name: "Locale", path: "locale.png"},
-    {name: "Alpha CRC", path: "alpha.svg"},
-    {name: "Acolad", path: "acolad.png"},
-    {name: "Argos Multilingual", path: "argos.png"},
-    {name: "Atlassian", path: "atlassian.svg"},
-    {name: "GALA", path: "gala.png"},
-    {name: "Vistatec", path: "vistatec.png"},
-  ]
   return(
     <section className="padding-vert--xl">
       <div className="container text--center">
         <h2>Our Visionary Partners</h2>
         <p className="margin-bottom--lg">We are honored to have the following visionary companies committed to signing our manifesto and supporting our mission</p>
         <div className={clsx(styles.logoGrid)}>
-          {logos.map(logo =>
-            <img src={`/img/logos/${logo.path}`} alt={logo.name} className="partner-logo" />
+          {partners.map(partner =>
+            <img src={`/img/partners/${partner.logo}`} alt={partner.name} className="partner-logo" />
           )}
         </div>
       </div>
