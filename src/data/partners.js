@@ -8,5 +8,6 @@ const partners = [
   { name: "GALA", logo: "gala.png" },
   { name: "Vistatec", logo: "vistatec.png" },
   { name: "XTM", logo: "xtm.svg" },
+  { name: "Dell", logo: "dell.svg" },
 ]
 export default partners
