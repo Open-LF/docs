@@ -78,7 +78,15 @@ const config = {
           src: 'img/logomark-primary.svg',
         },
         items: [
-          {to: '/manifesto', label: 'Manifesto', position: 'left'},
+          {
+            type: 'dropdown',
+            label: 'About',
+            position: 'left',
+            items: [
+              {to: '/manifesto', label: 'Manifesto'},
+              {to: '/faq', label: 'FAQ'},
+            ],
+          },
           {to: 'https://forms.gle/PGwuWFgxv6KgszC46', label: 'Register Interest', position: 'left'},
           {
             href: 'https://github.com/Open-LF/docs',
@@ -91,11 +99,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Foundation',
+            title: 'About',
             items: [
               {
                 label: 'Manifesto',
                 to: '/manifesto',
+              },
+              {
+                label: 'FAQ',
+                to: '/faq',
               },
               {to: 'https://forms.gle/PGwuWFgxv6KgszC46', label: 'Register Interest'},
             ],
