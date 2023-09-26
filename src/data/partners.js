@@ -1,9 +1,9 @@
 const partners = [
   { name: "CISCO", logo: "cisco.svg" },
-  { name: "Locale", logo: "locale.png" },
+  { name: "Locale", logo: "locale.svg" },
   { name: "Alpha CRC", logo: "alpha.svg" },
-  { name: "Acolad", logo: "acolad.png" },
-  { name: "Argos Multilingual", logo: "argos.png" },
+  { name: "Acolad", logo: "acolad.svg" },
+  { name: "Argos Multilingual", logo: "argos.svg" },
   { name: "Atlassian", logo: "atlassian.svg" },
   { name: "GALA", logo: "gala.png" },
   { name: "Vistatec", logo: "vistatec.png" },
