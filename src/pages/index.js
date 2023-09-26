@@ -13,11 +13,9 @@ function Hero() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title margin-bottom--lg">
-          <span>Welcome to the</span><br />Open Language Foundation
-        </h1>
+        <img src="/img/logo-white.svg" alt="Open Language Foudation" className="margin-bottom--lg" />
         <p className="hero__subtitle margin-bottom--xl">
-          At the Open Language Foundation, we're on a mission to revolutionize the localization industry through innovation, collaboration, and a commitment to breaking down language barriers.
+          We're on a mission to revolutionize the localization industry through innovation, collaboration, and a commitment to breaking down language barriers.
         </p>
         <div className="buttons">
           <Link

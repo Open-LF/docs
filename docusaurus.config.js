@@ -73,10 +73,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/social-card.png',
       navbar: {
-        title: 'Open Language Foundation',
         logo: {
           alt: 'Open Language Foundation Logo',
-          src: 'img/globe.png',
+          src: 'img/logomark-primary.svg',
         },
         items: [
           {to: '/manifesto', label: 'Manifesto', position: 'left'},
