@@ -72,6 +72,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/social-card.png',
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         logo: {
           alt: 'Open Language Foundation Logo',
