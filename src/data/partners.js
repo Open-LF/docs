@@ -13,5 +13,7 @@ const partners = [
   { name: "Translated", logo: "translated.svg" },
   { name: "Spartan", logo: "spartan.png" },
   { name: "Nimdzi", logo: "nimdzi.svg" },
+  { name: "Lilt", logo: "lilt.svg" },
+  { name: "Supertext", logo: "supertext.png" },
 ]
 export default partners
