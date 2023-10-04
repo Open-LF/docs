@@ -16,5 +16,6 @@ const partners = [
   { name: "Lilt", logo: "lilt.svg" },
   { name: "Supertext", logo: "supertext.png" },
   { name: "Localisation Research Centre", logo: "lrc.png" },
+  { name: "memoQ", logo: "memoq.png" },
 ]
 export default partners
