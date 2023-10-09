@@ -18,5 +18,6 @@ const partners = [
   { name: "Localisation Research Centre", logo: "lrc.png" },
   { name: "memoQ", logo: "memoq.png" },
   { name: "Creative Words", logo: "creativewords.png" },
+  { name: "Lokalise", logo: "lokalise.svg" },
 ]
 export default partners
